@@ -5,7 +5,7 @@ export default function Intro() {
         <div className="intro" id="intro">
             <div className="left">
                 <div className="imgContainer">
-                    <img src="./assets/pic.jpg" alt="" />
+                    <img src={process.env.PUBLIC_URL + "/assets/pic.jpg"} alt="" />
                 </div>
             </div>
             <div className="right"></div>
