@@ -1,3 +1,17 @@
 .portfolio{
     background-color: blanchedalmond;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1{
+        font-size: 5rem;
+    }
+
+    ul{
+        margin: 0.8rem;
+        padding: 0;
+        list-style: none;
+        display: flex;
+    }
 }
