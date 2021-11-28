@@ -6,7 +6,7 @@ export default function Contact() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        setMessage(True)
+        setMessage(true)
     }
 
     return (
@@ -20,6 +20,7 @@ export default function Contact() {
                     <input type="text" placeholder="Email" />
                     <textarea placeholder="Enter a Message"></textarea>
                     <button type="submit">Send</button>
+                    {message && <span>Thanks for the message, I will respond ASAP!</span>}
                 </form>
             </div>
         </div>
