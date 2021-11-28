@@ -68,35 +68,12 @@ export default function Portfolio() {
                 ))}
             </ul>
             <div className="container">
-                <div className="item">
-                    <img src={process.env.PUBLIC_URL + "/assets/placeholder.jpg"} alt="" />
-                    <h3>Banking App</h3>
-                </div>
-
-                <div className="item">
-                    <img src={process.env.PUBLIC_URL + "/assets/placeholder.jpg"} alt="" />
-                    <h3>Banking App</h3>
-                </div>
-
-                <div className="item">
-                    <img src={process.env.PUBLIC_URL + "/assets/placeholder.jpg"} alt="" />
-                    <h3>Banking App</h3>
-                </div>
-
-                <div className="item">
-                    <img src={process.env.PUBLIC_URL + "/assets/placeholder.jpg"} alt="" />
-                    <h3>Banking App</h3>
-                </div>
-
-                <div className="item">
-                    <img src={process.env.PUBLIC_URL + "/assets/placeholder.jpg"} alt="" />
-                    <h3>Banking App</h3>
-                </div>
-
-                <div className="item">
-                    <img src={process.env.PUBLIC_URL + "/assets/placeholder.jpg"} alt="" />
-                    <h3>Banking App</h3>
-                </div>
+                {data.map((d) => (
+                    <div className="item">
+                        <img src={d.img} alt="" />
+                        <h3>{d.title}</h3>
+                    </div>
+                ))}
             </div>
         </div>
     )
