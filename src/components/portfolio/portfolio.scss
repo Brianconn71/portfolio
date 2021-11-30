@@ -1,10 +1,12 @@
 @import "../../global.scss";
 
 .portfolio{
-    background-color: blanchedalmond;
+    background-color: #ee9b00;
+    color: #fff;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 
     h1{
         font-size: 5rem;
@@ -39,15 +41,15 @@
         }
 
         .item{
-            width: 15rem;
-            height: 10rem;
+            width: 20rem;
+            height: 15rem;
             border-radius: 1.2rem;
-            border: 1px solid lightblue;
+            border: 1px solid #1d3557;
             margin: 1rem 2rem;
             display: flex;
             align-items: center;
             justify-content: center;
-            color: black;
+            color: #fff;
             position: relative;
             transition: all .5s ease;
             cursor: pointer;
